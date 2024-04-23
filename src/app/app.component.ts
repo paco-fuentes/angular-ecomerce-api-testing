@@ -10,7 +10,7 @@ import { NgForOf } from '@angular/common';
   standalone: true,
   imports: [RouterOutlet, ProductComponent, NgForOf],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css',
+  styleUrl: './app.component.scss',
 })
 export class AppComponent {
   title = 'my-app';
