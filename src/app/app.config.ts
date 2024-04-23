@@ -6,9 +6,8 @@ import { importProvidersFrom } from '@angular/core';
 import { routes } from './app.routes';
 
 export const appConfig: ApplicationConfig = {
-  providers: [provideRouter(routes), importProvidersFrom(HttpClientModule),]
+  providers: [provideRouter(routes), importProvidersFrom(HttpClientModule)],
 };
-
 
 // import { ApplicationConfig } from '@angular/core';
 // import { HttpClientModule } from '@angular/common/http';
