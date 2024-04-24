@@ -1,8 +1,9 @@
 <ng-container *ngIf="product">
-  <p>¡Hello World!</p>
   <h1>{{ product.title }}</h1>
+  <img [src]="product.image" width="640" height="480" />
+  <p>{{ product.description }}</p>
   <p>$ {{ product.price }}</p>
-  <img [src]="product.images[0]" alt="" />
+  <button>Buy Now!</button>
 </ng-container>
 <ng-container *ngIf="!product">
   <p>Waiting products...</p>

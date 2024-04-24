@@ -24,8 +24,9 @@ export class AppComponent {
   // ejecutar al iniciar el ciclo de vida
   ngOnInit() {
     // aqui se usa RxJS para solucionar la peticion asíncrona de forma reactiva
+    // thanks to https://fakestoreapi.com/
     this.http
-      .get<Product[]>('https://api.escuelajs.co/api/v1/products')
+      .get<Product[]>('https://fakestoreapi.com/products')
       .subscribe((data) => {
         this.products = data;
         console.log(data);
