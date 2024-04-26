@@ -1,6 +1,6 @@
 <ng-container *ngIf="product">
   <h1>{{ product.title }}</h1>
-  <img [src]="product.image" width="640" height="480" />
+  <img [ngSrc]="product.image" width="200" height="200" sizes="(max-width: 100px) 100vw, 50vw" />
   <p>{{ product.description }}</p>
   <p>$ {{ product.price }}</p>
   <button>Buy Now!</button>

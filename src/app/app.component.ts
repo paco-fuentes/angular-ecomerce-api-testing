@@ -23,7 +23,7 @@ export class AppComponent {
 
   // ejecutar al iniciar el ciclo de vida
   ngOnInit() {
-    // aqui se usa RxJS para solucionar la peticion asíncrona de forma reactiva
+    // aqui se usa RxJS para resolver la peticion asíncrona de forma reactiva
     // thanks to https://fakestoreapi.com/
     this.http
       .get<Product[]>('https://fakestoreapi.com/products')
