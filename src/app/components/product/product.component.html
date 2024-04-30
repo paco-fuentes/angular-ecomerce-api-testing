@@ -1,16 +1,18 @@
-<ng-container @if{product}>
+@if(product){
+<div>
   <h1>{{ product.title }}</h1>
   <!-- con ngSrc consigo el lazy load de imagenes, que está activado por defecto -->
   <img
     [ngSrc]="product.image"
     width="200"
     height="200"
-    sizes="(max-width: 100px) 100vw, 50vw"
   />
   <p>{{ product.description }}</p>
   <p>$ {{ product.price }}</p>
   <button>Buy Now!</button>
-</ng-container>
-<ng-container @if{!product}>
+</div>
+} @else {
+<div>
   <p>Waiting products...</p>
-</ng-container>
+</div>
+}
